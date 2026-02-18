@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./input.module.css";
+import styles from "../app/input.module.css";
 import Typewriter from "typewriter-effect";
 export default function Home() {
 
@@ -14,7 +14,8 @@ export default function Home() {
     }
 
     console.log("Name submitted.", playerName);
-    setPlayerName("");
+    setPlayerName(playerName);
+    
   }
 
   return (

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styles from "../app/input.module.css";
 import Typewriter from "typewriter-effect";
+import { useRouter} from "next/navigation";
 export default function Home() {
 
   const [playerName, setPlayerName] = useState("");
@@ -10,6 +11,7 @@ export default function Home() {
   const handleSubmit = () => {
     if (playerName.trim() === "") {
       alert("Please enter your name.");
+
       return;
     }
 
